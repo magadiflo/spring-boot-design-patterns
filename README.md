@@ -8,6 +8,23 @@ precisamente en eso se basa este repositorio, en la implementación de patrones 
 - [java-design-patterns](https://github.com/magadiflo/java-design-patterns)
 - [Medium | Implementing the Strategy Design pattern in Spring Boot](https://medium.com/codex/implementing-the-strategy-design-pattern-in-spring-boot-df3adb9ceb4a)
 
+**NOTA**
+
+> Para la realización de los diagramas se utiliza `PlantUML`. `PlantUML` es una herramienta muy versátil que facilita la
+> creación rápida y directa de una amplia gama de diagramas:
+> - Diagrama de secuencia
+> - Diagrama de casos de uso
+> - [Diagrama de clase](https://plantuml.com/es/class-diagram)
+> - Diagrama de objetos
+> - Diagrama de actividades
+> - Diagrama de componentes
+> - Diagrama de despliegue
+> - Diagrama de estado
+> - Diagrama de tiempo
+>
+> Podemos usar la misma web de `plantuml` para poder crear los diagramas
+> [PlantUML - Editor](https://www.plantuml.com/plantuml/umla/SoWkIImgAStDuNBEIImkDZ1KiAdHrLM0S8oWWiOAMd0n4wYOgK8-NCmCAcQkeAS75RA02bagm5GP6d0vfEQb0Aq20000)
+
 ---
 
 ## Strategy Design pattern
