@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+
+spring:
+  application:
+    name: spring-boot-design-patterns
+
+logging:
+  level:
+    dev.magadiflo.app: DEBUG
