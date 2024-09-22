@@ -65,8 +65,6 @@ implementación apropiada según el tipo de archivo y ejecutaremos la estrategia
 A continuación, se muestra un diagrama UML para proporcionar una descripción general de alto nivel del patrón de diseño
 que estamos a punto de implementar.
 
-> TODO: Aquí irá diagrama de clase del patrón Strategy que usaré
-
 Ahora, profundicemos en el código.
 
 Creemos una interfaz para nuestro Analizador de Archivos (File Parser).
@@ -235,3 +233,41 @@ public class FileParserController {
     }
 }
 ````
+
+### Probando implementación de patrón Strategy
+
+Procesando archivo `xml`:
+
+````bash
+$ curl -v -X POST -H "Content-Type: multipart/form-data" -F "file=@C:\Users\USUARIO\Downloads\reporte-de-empleados.xml" http://localhost:8080/api/v1/strategy/files/xml | jq
+>
+< HTTP/1.1 204
+<
+````
+
+Información del archivo `xml` en la consola del IDE:
+
+````bash
+d.m.a.b.strategy.strategy.XmlFileParser  : file
+d.m.a.b.strategy.strategy.XmlFileParser  : reporte-de-empleados.xml
+d.m.a.b.strategy.strategy.XmlFileParser  : application/xml
+````
+
+Procesando archivo `json`:
+
+````bash
+$ curl -v -X POST -H "Content-Type: multipart/form-data" -F "file=@C:\Users\USUARIO\Downloads\reporte de personal.json" http://localhost:8080/api/v1/strategy/files/json | jq
+>
+< HTTP/1.1 204
+<
+````
+
+Información del archivo `json` en la consola del IDE:
+
+````bash
+d.m.a.b.s.strategy.JsonFileParser        : file
+d.m.a.b.s.strategy.JsonFileParser        : reporte de personal.json
+d.m.a.b.s.strategy.JsonFileParser        : application/octet-stream
+````
+
+Lo mismo ocurriría con el archivo `csv`.
