@@ -65,6 +65,8 @@ implementación apropiada según el tipo de archivo y ejecutaremos la estrategia
 A continuación, se muestra un diagrama UML para proporcionar una descripción general de alto nivel del patrón de diseño
 que estamos a punto de implementar.
 
+![01.png](assets/01.png)
+
 Ahora, profundicemos en el código.
 
 Creemos una interfaz para nuestro Analizador de Archivos (File Parser).
